@@ -1,20 +1,35 @@
-const guests = [
-    {tableName:"Tavolo Vip",guestName:"Brad Pitt",place:1},
-    {tableName:"Tavolo Vip",guestName:"Johnny Depp",place:2},
-    {tableName:"Tavolo Vip",guestName:"Lady Gaga",place:3},
-    {tableName:"Tavolo Vip",guestName:"Cristiano Ronaldo",place:4},
-    {tableName:"Tavolo Vip",guestName:"Georgina Rodriguez",place:5},
-    {tableName:"Tavolo Vip",guestName:"Chiara Ferragni",place:6},
-    {tableName:"Tavolo Vip",guestName:"George Clooney",place:7},
-    {tableName:"Tavolo Vip",guestName:"Amal Clooney",place:8},
-    {tableName:"Tavolo Vip",guestName:"Fedez",place:9},
-    {tableName:"Tavolo Vip",guestName:"Amadeus",place:10},
-    {tableName:"Tavolo Vip",guestName:"Fiorello",place:11},
-]
+// // const guests = [
+// //     {tableName:"Tavolo Vip",guestName:"Brad Pitt",place:1},
+// //     {tableName:"Tavolo Vip",guestName:"Johnny Depp",place:2},
+// //     {tableName:"Tavolo Vip",guestName:"Lady Gaga",place:3},
+// //     {tableName:"Tavolo Vip",guestName:"Cristiano Ronaldo",place:4},
+// //     {tableName:"Tavolo Vip",guestName:"Georgina Rodriguez",place:5},
+// //     {tableName:"Tavolo Vip",guestName:"Chiara Ferragni",place:6},
+// //     {tableName:"Tavolo Vip",guestName:"George Clooney",place:7},
+// //     {tableName:"Tavolo Vip",guestName:"Amal Clooney",place:8},
+// //     {tableName:"Tavolo Vip",guestName:"Fedez",place:9},
+// //     {tableName:"Tavolo Vip",guestName:"Amadeus",place:10},
+// //     {tableName:"Tavolo Vip",guestName:"Fiorello",place:11},
+// // ]
 
-const typographyList = guests.map((guest)=>{
-    console.log(`${guest.guestName} - ${guest.tableName} at place ${guest.place}`)
+// // const typographyList = guests.map((guest)=>{
+// //     console.log(`${guest.guestName} - ${guest.tableName} at place ${guest.place}`)
+// // })
+
+const guests = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello']
+
+const objectGuests = guests.map((guest, index) =>{
+return {
+    guestName: guest,
+    tableName: "Tavolo Vip",
+    place: index +1
+}
 })
+
+console.log(objectGuests)
+
+//! ************************************************************************+
+
 
 const students = [
     { Id: 213, Name: "Giuseppina della Rovere", Grades: 78 },
