@@ -58,3 +58,19 @@ const gradesAndID = students.filter((student) =>{
 })
 
 console.log(gradesAndID)
+
+//! *********************************************************+
+
+function myMap(array, funzioneDiConversione) {
+    const newArray=[]
+    for(let index = 0; index<array.length; index++){
+        newArray.push(funzioneDiConversione(array[index], index))
+    }
+    return newArray
+}
+
+const podio = ['Mauro', 'Luca', 'Antonio'];
+const podioConPosizioni = myMap(podio, function(nome, i) {
+    return nome + ' ' + (i + 1);
+});
+console.log(podioConPosizioni); // stampa ['Mauro 1', 'Luca 2', 'Antonio 3'];

@@ -26,3 +26,23 @@ Id  Name                Grades
 196 Luigi Grimaldello       68
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
+
+
+*******************************
+
+/**
+   myMap: un'altra versione della map del browser
+   Trasforma un array in un altro array data una funzione di conversione
+   @param array  L'array da convertire
+   @param funzioneDiConversione   La funzione di conversione, che prende in ingresso uno degli elementi dell'array, il suo indice, e restituisce il valore convertito.
+*/
+function myMap(array, funzioneDiConversione) {
+    // codice
+}
+
+// Che poi uno la usa così:
+const podio = ['Mauro', 'Luca', 'Antonio'];
+const podioConPosizioni = myMap(podio, function(nome, i) {
+    return nome + ' ' + (i + 1);
+});
+console.log(podioConPosizioni); // stampa ['Mauro 1', 'Luca 2', 'Antonio 3'];
