@@ -16,7 +16,7 @@ for (let index = 0; index < biciclette.length; index++) {
 console.log(biciLeggera)
 
 //destrutturo l'array assegnando alle variabili nomeBiciLeggera e pesoBiciLeggera le proprietà dell'oggetto biciLeggera
-const {nomeBiciLeggera, pesoBiciLeggera} = biciLeggera
+const {nomeBiciLeggera, peso} = biciLeggera
 
 //console.log con template literals
-console.log(`La bicicletta più leggera è la ${nomeBiciLeggera}, con un peso di ${pesoBiciLeggera}kg`)
+console.log(`La bicicletta più leggera è la ${nomeBiciLeggera}, con un peso di ${peso}kg`)
